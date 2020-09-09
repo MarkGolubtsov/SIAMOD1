@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="546.0" minWidth="10.0" prefWidth="324.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="632.0" minWidth="10.0" prefWidth="585.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="215.0" minHeight="10.0" prefHeight="215.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="533.0" minHeight="10.0" prefHeight="467.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="260.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button layoutX="75.0" layoutY="150.0" mnemonicParsing="false" onAction="#write" prefHeight="31.0" prefWidth="120.0" text="Построить" textOverrun="CLIP">
+         <GridPane.margin>
+            <Insets bottom="150.0" left="150.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="36.67529296875">
+         <GridPane.margin>
+            <Insets bottom="80.0" left="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="M">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="R0">
+         <GridPane.margin>
+            <Insets bottom="-80.0" left="10.0" />
+         </GridPane.margin>
+      </Text>
+      <TextField fx:id="mInput" text="526159">
+         <GridPane.margin>
+            <Insets left="40.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="r0Input" text="50003">
+         <GridPane.margin>
+            <Insets left="40.0" right="20.0" top="80.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="aInput" text="3">
+         <GridPane.margin>
+            <Insets bottom="80.0" left="40.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <BarChart fx:id="barChart" animated="false" barGap="1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="330.0" prefWidth="632.0" titleSide="BOTTOM" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" upperBound="0.07" />
+        </yAxis>
+      </BarChart>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Матожидание" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="400.0" left="20.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="mat" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="400.0" left="250.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Дисперсия" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="300.0" left="20.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="disp" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="300.0" left="250.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="СКО" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="200.0" left="20.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="sredKv" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="200.0" left="250.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2K/N" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="100.0" left="20.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="kN" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="100.0" left="250.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Период" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="period" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="250.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Отрезок аппериодичности" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="-100.0" left="20.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fx:id="apperiodich" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="-100.0" left="250.0" />
+         </GridPane.margin>
+      </Text>
+   </children>
+</GridPane>
