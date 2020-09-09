@@ -26,6 +26,11 @@ public class Lamer extends RandomGenerator {
     }
 
     @Override
+    public double getR() {
+        return r;
+    }
+
+    @Override
     public List<Double> getOneSequence() {
         List<Double> array = new ArrayList<>();
         try (FileWriter writer = new FileWriter(UUID.randomUUID().toString() + "_numbers.txt", false)) {

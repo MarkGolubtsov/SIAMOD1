@@ -18,6 +18,7 @@ public abstract class RandomGenerator {
 
     public abstract double next();
 
+    public abstract double getR();
 
     public abstract List<Double> getOneSequence();
 

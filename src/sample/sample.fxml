@@ -118,7 +118,7 @@
             <Insets left="250.0" />
          </GridPane.margin>
       </Text>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Отрезок аппериодичности" GridPane.rowIndex="1">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Отрезок апериодичности" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets bottom="-100.0" left="20.0" />
          </GridPane.margin>
